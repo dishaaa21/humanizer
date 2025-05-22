@@ -127,23 +127,6 @@ const HumanizerTool = () => {
         <div>
           <label className="mb-2 block text-sm font-medium text-gray-700">Fluency Level</label>
           <div className="flex items-center space-x-2">
-            <span className="text-xs text-gray-500">Simple</span>
-            <div className="flex flex-1 justify-between">
-              {[1, 2, 3, 4, 5].map((level) => (
-                <button
-                  key={level}
-                  onClick={() => handleFluencyChange(level)}
-                  className={`h-6 w-6 rounded-full text-xs font-medium ${
-                    settings.fluency === level
-                      ? 'bg-primary-600 text-white'
-                      : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                  }`}
-                >
-                  {level}
-                </button>
-              ))}
-            </div>
-            <span className="text-xs text-gray-500">Advanced</span>
           </div>
         </div>
 
